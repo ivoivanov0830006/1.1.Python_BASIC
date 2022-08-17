@@ -25,6 +25,13 @@ d = 1
 password_number = a*1000+b*100+c*10+d                       # 2401
 print(f"\nPassword: {password_number}")                     # password will be printed on new line
 ------------------------------------------------------------------------------------
+for letter in range(len(input())):
+    print(letter, end=" ")                                  # 0 1 2 3
+    print(letter, sep=" ")                                  # 0
+                                                            # 1
+                                                            # 2
+                                                            # 3
+------------------------------------------------------------------------------------
 text = input("Type something: ")                            # "       Hello       "
 print(text.strip())                                         # "Hello"    - removes all blank spaces
 print(text.lower())                                         # "       hello       "
