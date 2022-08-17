@@ -31,5 +31,7 @@ password_number = a*1000+b*100+c*10+d                       # 2401
 print(f"\nPassword: {password_number}")                     # password will be printed on new line
 
 
-text = input("Type something: ")                            # "       hello       "
-print(text.strip())                                         # "hello"    - removes all blank spaces
+text = input("Type something: ")                            # "       Hello       "
+print(text.strip())                                         # "Hello"    - removes all blank spaces
+print(text.lower())                                         # "       hello       "
+print(text.upper())                                         # "       HELLO       "           
