@@ -1,0 +1,27 @@
+from math import floor
+tours_count = int(input())
+start_points = int(input())
+
+win = 2000
+final = 1200
+semifinal = 720
+total_w = 0
+total_f = 0
+total_sf = 0
+count_w = 0
+
+for tour in range(1, tours_count + 1):
+    tour_level = input()
+    if tour_level == "W":
+        total_w += win
+        count_w += 1
+    elif tour_level == "F":
+        total_f += final
+    elif tour_level == "SF":
+        total_sf += semifinal
+total = start_points + total_w + total_f + total_sf
+average = floor((total - start_points) / tours_count)
+percent_win = (count_w / tours_count) * 100
+print(f"Final points: {total}")
+print(f"Average points: {average}")
+print(f"{percent_win:.2f}%")
