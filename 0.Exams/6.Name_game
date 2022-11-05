@@ -1,0 +1,19 @@
+text = input()
+total_points = 0
+current_best_points = 0
+current_winner = ""
+
+while text != "Stop":
+    name = text
+    total_points = 0
+    for letter in text:
+        current_points = int(input())
+        if ord(letter) == current_points:
+            total_points += 10
+        else:
+            total_points += 2
+    if total_points >= current_best_points:
+        current_best_points = total_points
+        current_winner = name
+    text = input()
+print(f"The winner is {current_winner} with {current_best_points} points!")
