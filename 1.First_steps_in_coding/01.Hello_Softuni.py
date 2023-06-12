@@ -1,5 +1,7 @@
-function greeting() {
-    console.log("Hello SoftUni");
-}
-
-greeting();
+print("Hello SoftUni")
+print("")
+print("")
+text = "Hello"
+print(text)
+text = 6
+print(text)
