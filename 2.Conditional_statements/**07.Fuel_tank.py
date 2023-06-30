@@ -57,6 +57,18 @@ else:
             total_price = 0.9 * quantity * gas
 print(f"{total_price:.2f} lv.")
 
+# --------------------------- Another Solution ----------------------------
+#
+# fuel_type = (input())
+# volume = int(input())
+# if fuel_type == "Diesel" or fuel_type == "Gas" or fuel_type == "Gasoline" :
+#     if volume >= 25:
+#         print(f"You have enough {(fuel_type).lower()}.")
+#     else:
+#         print(f"Fill your tank with {(fuel_type).lower()}!")
+# else:
+#     print("Invalid fuel!")
+
 
 #Напишете програма, която да изчислява, колко ще струва на един шофьор да напълни резервоара на автомобила си, 
 #като знаете – какъв тип гориво зарежда, каква е цената за литър гориво и дали разполага с карта за отстъпки. 
