@@ -13,10 +13,13 @@ for first_number in range(start_interval, end_interval + 1):
             break
     if is_found:
         break
+        
 if is_found:
     print(f"Combination N:{current_combination} ({first_number} + {second_number} = {magic_number})")
 else:
     print(f"{total_combinations} combinations - neither equals {magic_number}")
+
+
 
 #Напишете програма която проверява всички възможни комбинации от двойка числа в интервала от две дадени числа. 
 #На изхода се отпечатва, коя поред е комбинацията чиито сбор от числата е равен на дадено магическо число. 
