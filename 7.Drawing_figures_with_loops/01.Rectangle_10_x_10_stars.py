@@ -3,6 +3,7 @@ for rows in range(1, 11):
         print("*", end="")
     print()
 
+
 # -----------ANOTHER SOLUTION---------------
 #
 # for i in range(1, 11):
