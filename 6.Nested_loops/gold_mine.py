@@ -1,15 +1,14 @@
-locations_count = int(input())
+floors = int(input())
+rooms = int(input())
+room_label = ""
 
-for location in range(1, locations_count + 1):
-    total_income = 0
-    expected_income_per_day = int(input())
-    working_days = int(input())
-    for days in range(1, working_days + 1):
-        income = int(input())
-        total_income += income
-    average_total_income = total_income / working_days
-    if average_total_income >= expected_income_per_day:
-        print(f"Good job! Average gold per day: {average_total_income:.2f}.")
-    else:
-        diff = expected_income_per_day - average_total_income
-        print(f"You need {diff:.2f} gold.")
+for floor in range(floors, 0, -1):
+    for room in range(0, rooms):
+        if floor == floors:
+            room_label = "L"
+        elif floor % 2 != 0:
+            room_label = "A"
+        elif floor % 2 == 0:
+            room_label = "O"
+        print(f"{room_label}{floor}{room}", end = " ")
+    print()
